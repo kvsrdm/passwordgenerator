@@ -223,19 +223,16 @@ class _PasswordGenerateState extends State<PasswordGenerate> {
                           } else if (21.0 < pasSize) {
                             passwordStep = 5;
                             passwordRating = "Güçlü";
-                            print("Güçlü");
                           }
                         } else {
                           Toast.show("Geçersiz", context,
                               duration: Toast.LENGTH_SHORT,
                               gravity: Toast.BOTTOM);
-                          print("Geçersiz");
                         }
                       } else {
                         Toast.show("Geçersiz", context,
                             duration: Toast.LENGTH_SHORT,
                             gravity: Toast.BOTTOM);
-                        print("Geçersiz");
                       }
                     });
                   },
